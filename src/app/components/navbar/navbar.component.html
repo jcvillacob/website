@@ -1,0 +1,30 @@
+<!-- NAVBAR -->
+<nav class="container" [ngClass]="{'init' : init}">
+    <div class="container__navbar">
+        <!-- Logo -->
+        <img src="assets/logo_nav.png" alt="Company Logo" class="navbar__img">
+
+        <!-- Menu -->
+        <div class="navbar__menu">
+            <div class="menu__enlace">
+                <a routerLink="home" class="enlace__element">Home</a>
+                <a routerLink="cotizar" class="enlace__element">Cotizar</a>
+                <a (click)="activarMenu(true)" class="enlace__element">Menú</a>
+            </div>
+        </div>
+
+        <!-- Bars -->
+        <div class="menu__bars" (click)="activarMenu(true)">
+            <i class="fa-solid fa-bars "></i>
+        </div>
+    </div>
+
+    <!-- Menu Open -->
+    <div class="menu__open" [ngClass]="{'-active' : active}">
+        <i class="open__close fa-solid fa-xmark" (click)="activarMenu(false)"></i>
+        <a routerLink="home" class="open__element">Home</a>
+        <a routerLink="cotizar" class="open__element">Cotizar</a>
+        <a routerLink="" class="open__element">Menú</a>
+    </div>
+
+</nav>
