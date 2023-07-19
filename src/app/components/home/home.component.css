@@ -1,0 +1,33 @@
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    transition: backdrop-filter 0.3s;
+}
+
+/*  ***** GENERAL SECCIONES ***** */
+.container__section {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.-primera {
+    background-color: lightblue;
+}
+
+.-segunda {
+    background-color: lightcoral;
+}
+
+.-tercera {
+    background-color: lightgray;
+}
+
+.-cuarta {
+    background-color: lightpink;
+}
