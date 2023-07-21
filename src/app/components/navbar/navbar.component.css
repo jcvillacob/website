@@ -1,6 +1,7 @@
 .container {
     width: 100%;
     position: fixed;
+    z-index: 9999;
 }
 
 .container__navbar {
@@ -70,7 +71,6 @@
     width: 90%;
     margin-top: 30px;
     padding: 10px;
-    background-color: rgba(86, 89, 92, 0.082);
 }
 
 .open__close {

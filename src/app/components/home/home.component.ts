@@ -6,7 +6,21 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  newImg: boolean = false;
+  selected: number = 0;
+  itemSelected: any = {};
+  items: any[] = [
+    { category: 'Nuevos Libros', title: '', description: '', img: 'assets/carousel/1.png' },
+    { category: 'Deportes', title: '', description: '', img: 'assets/carousel/2.png' },
+    { category: 'Talleres', title: '', description: '', img: 'assets/carousel/3.png' },
+    { category: 'Eventos Especiales', title: '', description: '', img: 'assets/carousel/4.png' },
+  ];
+  vhs: any[] = [
+    { name: "Tractomula", ejes: 6, pesoMaximo: "34.000", galonesMax: "10.800", img: 'assets/vhs/tractomula.png' },
+    { name: "Doble Troque", ejes: 3, pesoMaximo: "18.000", galonesMax: "5.500", img: 'assets/vhs/tractomula.png' },
+    { name: "Sencillo", ejes: 2, pesoMaximo: "10.000", galonesMax: "3.400", img: 'assets/vhs/tractomula.png' }
+  ];
+  ind: number = 1;
   currentSection = 0;
 
   @HostListener('window:wheel', ['$event'])
@@ -36,4 +50,28 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  selectI(i: number) {
+    this.selected = i;
+    this.itemSelected = this.items[i];
+    this.newImg = false;
+    setTimeout(() => {
+      this.newImg = true;
+    }, 300);
+  }
+
+  vhIzq(): void {
+    if (this.ind > 0) {
+      this.ind--;
+    }
+  }
+
+  vhDer(): void {
+    if (this.ind < 2) {
+      this.ind++;
+    }
+  }
+
+  imgPosition(i: number) {
+    this.ind = i;
+  }
 }

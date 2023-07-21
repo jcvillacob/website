@@ -1,12 +1,80 @@
 <div class="container">
     <!-- PRIMERA SECCION -->
-    <div class="container__section -primera"></div>
-    
+    <div class="container__section -primera">
+        <div class="container__news">
+            <div class="news__menu">
+                <div class="menu__items">
+                    <div class="items__item" *ngFor="let item of items; index as i"
+                        [ngClass]="{'selected': i == selected}" (click)="selectI(i)">
+                        {{ item.category }}
+                    </div>
+                </div>
+            </div>
+            <div class="news__img" [ngClass]="{'init': newImg}">
+                <img [src]="itemSelected.img" alt="" class="img__photo">
+            </div>
+        </div>
+    </div>
+
     <!-- SEGUNDA SECCION -->
-    <div class="container__section -segunda"></div>
+    <div class="container__section -segunda">
+        <div class="section__cont2">
+            <div class="sectionVH__body">
+                <h2 class="body__title">TIPOS DE VEHÍCULOS</h2>
+                <div class="body__paragraph">
+                    <p>Nuestra responsabilidad va más allá del compromiso con nuestros clientes, también contribuimos al
+                        futuro
+                        de todos.</p>
+                    <p>En Coorditanques estamos comprometidos con el cuidado del medio ambiente y el bienestar social,
+                        por eso
+                        desarrollamos nuestro Programa de Sostenibilidad con una serie de prácticas positivas para
+                        reducir el
+                        impacto ambiental de nuestras operaciones diarias.</p>
+                </div>
+                <button class="body__buttom">Cotiza tu viaje</button>
+            </div>
+            <div class="section__vh">
+                <div class="vh__arrowl" (click)="vhIzq()"><i class="arrow__left fa-solid fa-arrow-left"></i></div>
+                <div class="vh__arrowr" (click)="vhDer()"><i class="arrow__right fa-solid fa-arrow-right"></i></div>
+                <!-- Vehículos -->
+                <div class="vh__tipo" *ngFor="let vh of vhs; index as i" style="background-image: url('{{vh.img}}');"
+                    (click)="imgPosition(i)" [ngClass]="ind == i ? '-center' : '-no-center'">
+                    <h2 class="tipo__carro">{{ vh.name }}</h2>
+                    <div class="tipo__detalles">
+                        <h5 class="detalles__detalle">Cantidad de Ejes: {{ vh.ejes }} Ejes</h5>
+                        <h5 class="detalles__detalle">Peso Máximo: {{ vh.pesoMaximo }} kg</h5>
+                        <h5 class="detalles__detalle">Galones Máximo: {{ vh.galonesMax }} galones</h5>
+                        <button class="detalles__buttom">Cotizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- TERCERA SECCION -->
-    <div class="container__section -tercera"></div>
+    <div class="container__section -tercera">
+        <div class="section__cont">
+            <div class="section__body">
+                <h2 class="body__title">SOSTENIBILIDAD</h2>
+                <div class="body__paragraph">
+                    <p>Nuestra responsabilidad va más allá del compromiso con nuestros clientes, también contribuimos al
+                        futuro
+                        de todos.</p>
+                    <p>En Coorditanques estamos comprometidos con el cuidado del medio ambiente y el bienestar social,
+                        por
+                        eso
+                        desarrollamos nuestro Programa de Sostenibilidad con una serie de prácticas positivas para
+                        reducir
+                        el
+                        impacto ambiental de nuestras operaciones diarias.</p>
+                </div>
+                <button class="body__buttom">Conoce más</button>
+            </div>
+            <div class="section__img">
+                <img src="assets/sostenibilidad/planta.png" alt="Planta Image" class="img__photo">
+            </div>
+        </div>
+    </div>
 
     <!-- CUARTA SECCION -->
     <div class="container__section -cuarta"></div>
