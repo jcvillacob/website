@@ -22,6 +22,17 @@ export class HomeComponent implements OnInit {
   ];
   ind: number = 1;
   currentSection = 0;
+  logos: any[] = [
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    {name: '', logo: 'assets/clientes/stepan.jpg'},
+  ];
 
   @HostListener('window:wheel', ['$event'])
   onWindowScroll(event: any) {
@@ -35,6 +46,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void { }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.itemSelected = this.items[0];
+      this.newImg = true;
+    }, 100);
+  }
 
   scrollDown() {
     window.scrollBy(0, 100);
