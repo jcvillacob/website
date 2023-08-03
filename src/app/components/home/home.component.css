@@ -455,6 +455,17 @@
 
 
 /* CUARTA SECCION */
+.-cuarta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+/* 
 .-cuarta, .section__clientes {
     display: flex;
     flex-direction: column;
@@ -495,3 +506,4 @@
     height: 50%;
 }
 
+ */

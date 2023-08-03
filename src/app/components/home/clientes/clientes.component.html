@@ -1,0 +1,16 @@
+<div class="section__clientes">
+    <h1 class="clientes__title">Nuestros Clientes</h1>
+    <p class="clientes__text">La base de nuestras relaciones es el respeto por quienes nos prefieren.</p>
+</div>
+<div class="section__logos">
+    <!-- SWIPER -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let logo of logos; index as i">
+                <img src="{{logo.logo}}" alt="Logo" class="swiper__logo">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</div>

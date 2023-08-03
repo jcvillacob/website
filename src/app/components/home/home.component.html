@@ -78,15 +78,6 @@
 
     <!-- CUARTA SECCION -->
     <div class="container__section -cuarta">
-        <div class="section__clientes">
-            <h1 class="clientes__title">Nuestros Clientes</h1>
-            <p class="clientes__text">La base de nuestras relaciones es el respeto por quienes nos prefieren.</p>
-        </div>
-        <div class="section__logos">
-            <div class="logos__logo" *ngFor="let logo of logos">
-                <img [src]="logo.logo" [alt]="logo.name" class="logo__img">
-            </div>
-
-        </div>
+        <app-clientes></app-clientes>
     </div>
 </div>
