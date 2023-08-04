@@ -1,0 +1,136 @@
+<div class="container">
+
+    <!-- Titulo -->
+    <h1 class="container__title">Solicita tu Cotización</h1>
+
+    <!-- Costeo -->
+    <div class="container__cotizar">
+        <!-- Logos -->
+        <div class="cotizar__logos">
+            <img src="assets/cotizar-envio.png" alt="Calculadora" class="logos__calculadora">
+            <hr>
+            <div class="logos__coordi">
+                <i class="fa-solid fa-truck coordi__i"></i>
+                <h2 class="coordi__texto">Coordinadora de Tanques</h2>
+            </div>
+        </div>
+
+
+        <!-- Formulario -->
+        <div class="cotizar__formulario">
+            <form class="formulario__form">
+                <p class="form__p">De una manera ágil y oportuna podrá conocer el costo de sus envíos a nivel nacional.
+                </p>
+
+                <!-- Datos de Empresa -->
+                <div class="form__seccion">
+                    <div class="seccion__label-title">
+                        <h3 class="label-title__title">Datos de la Empresa</h3>
+                    </div>
+                    <div class="seccion__labels">
+                        <div class="labels__label">
+                            <label for="nombre-empresa" class="label__title">Nombre de Empresa: </label>
+                            <input type="text" name="nombre-empresa" id="nombre-empresa" class="label__input">
+                        </div>
+                        <div class="labels__label">
+                            <label for="NIT" class="label__title">NIT: </label>
+                            <input type="text" name="NIT" id="NIT" class="label__input">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datos Personales -->
+                <div class="form__seccion">
+                    <div class="seccion__label-title">
+                        <h3 class="label-title__title">Datos Personales</h3>
+                    </div>
+                    <div class="seccion__labels">
+                        <div class="labels__label">
+                            <label for="nombre" class="label__title">Nombre del Solicitante: </label>
+                            <input type="text" name="nombre" id="nombre" class="label__input">
+                        </div>
+                        <div class="labels__label">
+                            <label for="email" class="label__title">Correo Electrónico: </label>
+                            <input type="text" name="email" id="email" class="label__input">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Origen y Destino -->
+                <div class="form__seccion">
+                    <div class="seccion__label-title">
+                        <h3 class="label-title__title">Lugar de Origen</h3>
+                    </div>
+                   <div class="seccion__labels">
+                        <div class="labels__label">
+                            <label for="ciudadO" class="label__title">Ciudad: </label>
+                            <input type="text" name="ciudadO" id="ciudadO" class="label__input">
+                        </div>
+                        <div class="labels__label">
+                            <label for="direccionO" class="label__title">Dirección: </label>
+                            <input type="text" name="direccionO" id="direccionO" class="label__input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__seccion">
+                    <div class="seccion__label-title">
+                        <h3 class="label-title__title">Lugar de Destino</h3>
+                    </div>
+                   <div class="seccion__labels">
+                        <div class="labels__label">
+                            <label for="ciudadD" class="label__title">Ciudad: </label>
+                            <input type="text" name="ciudadD" id="ciudadD" class="label__input">
+                        </div>
+                        <div class="labels__label">
+                            <label for="direccionD" class="label__title">Dirección: </label>
+                            <input type="text" name="direccionD" id="direccionD" class="label__input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__seccion">
+                    <div class="seccion__label-title">
+                        <h3 class="label-title__title">Tipo de Vehículo</h3>
+                    </div>
+                   <div class="seccion__labels">
+                        <div class="labels__label">
+                            <label for="vehiculo" class="label__title">Tipo de Vehículo: </label>
+                            <select name="vehiculo" id="vehiculo">
+                                <option value="">Seleccione Tipo de Vehículo</option>
+                                <option value="TM">Tractomula</option>
+                                <option value="DT">Doble Troque</option>
+                                <option value="SC">Sencillo</option>
+                            </select>
+                        </div>
+                        <div class="labels__label">
+                            <h4>Capacidad Máxima: </h4>
+                            <ul style="margin-top: 10px;">
+                                <li><span>10.800 Galones</span></li>
+                                <li><span>34.000 Kilogramos</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__seccion">
+                    <div class="seccion__label-title">
+                        <h3 class="label-title__title">Observaciones</h3>
+                    </div>
+                   <div class="seccion__labels">
+                        <div class="labels__label">
+                            <label for="producto">Producto: </label>
+                            <input type="text" name="producto" id="producto">
+                        </div>
+                        <div class="labels__label">
+                            <label for="observaciones">Observaciones: </label>
+                            <textarea type="text" name="observaciones" id="observaciones"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
