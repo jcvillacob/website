@@ -1,0 +1,23 @@
+<!-- PRIMER SWIPPER -->
+<div class="swiper mySwiper1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let slide of slides; index as i">
+            <img [src]="slide.img" alt="Image">
+            <div class="swiper__card">
+                <div class="card__title">
+                    <h2>{{ slide.title }}</h2>
+                </div>
+                <div class="card__body">
+                    <span>{{ slide.info }}</span>
+                </div>
+                <div class="card__button">
+                    <button class="button__btn">Conoce más</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>

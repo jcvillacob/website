@@ -1,0 +1,15 @@
+<div class="faq-container">
+    <div class="faq-container__container">
+        <h1 class="container__title">Preguntas Frecuentes</h1>
+
+        <div class="container__question" *ngFor="let faq of faqs; index as i" [ngClass]="{'-shown': faq.shown}">
+            <div class="question__header" (click)="showAnswer(i)">
+                <div class="header__question"><span>{{ faq.question }}</span></div>
+                <div class="header__item"></div>
+            </div>
+            <div class="question__body">
+                {{ faq.answer }}
+            </div>
+        </div>
+    </div>
+</div>

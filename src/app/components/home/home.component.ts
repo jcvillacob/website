@@ -1,5 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
+// Declaramos Swiper como una variable global
+declare var Swiper: any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -23,15 +26,15 @@ export class HomeComponent implements OnInit {
   ind: number = 1;
   currentSection = 0;
   logos: any[] = [
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
-    {name: '', logo: 'assets/clientes/stepan.jpg'},
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.jpg' },
   ];
 
   @HostListener('window:wheel', ['$event'])

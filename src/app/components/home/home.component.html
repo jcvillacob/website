@@ -1,6 +1,6 @@
 <div class="container">
     <!-- PRIMERA SECCION -->
-    <div class="container__section -primera">
+<!--     <div class="container__section -primera">
         <div class="container__news">
             <div class="news__menu">
                 <div class="menu__items">
@@ -14,7 +14,13 @@
                 <img [src]="itemSelected.img" alt="" class="img__photo">
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <!-- PRIMERA SECCION -->
+     <div class="container__section -primera">
+        <app-swiper></app-swiper>
+    </div> 
 
     <!-- SEGUNDA SECCION -->
     <div class="container__section -segunda">
@@ -79,5 +85,10 @@
     <!-- CUARTA SECCION -->
     <div class="container__section -cuarta">
         <app-clientes></app-clientes>
+    </div>
+
+    <!-- QUINTA SECCION -->
+    <div class="container__section -quinta">
+        <app-contact></app-contact>
     </div>
 </div>
