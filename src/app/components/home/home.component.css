@@ -26,94 +26,9 @@
 }
 
 /* PRIMER SWIPPER */
-.swiper {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+.-primera {
+    
 }
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #d6abab;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-pagination {
-    position: absolute;
-    top: 90%;
-}
-
-/* .container__news {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-}
-
-.news__menu, .news__img {
-    height: 100%;
-}
-
-.news__menu{
-    width: 20%;
-    background-color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menu__items {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.items__item {
-    padding: 15px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.selected {
-    background-color: #233D4D;
-    color: #fff;
-}
-
-.items__item:hover {
-    cursor: pointer;
-}
-
-.news__img {
-    width: 85%;
-    transform: translateX(50%);
-    opacity: 0.1;
-    transition: all 0.3s;
-}
-
-.init {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.img__photo {
-    min-height: 100%;
-    min-width: 100%;
-} */
-
 
 
 
@@ -495,51 +410,10 @@
 
 /* CUARTA SECCION */
 .-cuarta {
-}
-
-/* 
-.-cuarta, .section__clientes {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    text-align: center;
-    gap: 30px;
 }
-
-.section__clientes {
-    gap: 30px;
-}
-
-.clientes__title {
-    font-weight: 600;
-    position: relative;
-}
-
-.clientes__title::after {
-    content: '';
-    width: 200px;
-    height: 3px;
-    position: absolute;
-    background-color: #EE2C37;
-    border-radius: 3px;
-    left: 42%;
-    top: 130%;
-}
-
-.clientes__text {
-    font-size: 14px;
-}
-
-.section__logos {
-    width: 90%;
-    background-color: lightblue;
-    height: 50%;
-}
-
- */
-
 
 
  /* QUINTA SECCION */

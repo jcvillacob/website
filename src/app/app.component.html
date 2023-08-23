@@ -1,2 +1,4 @@
 <app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<div class="container" [ngClass]="{'-activated': activeNav}" (click)="setNav()">
+    <router-outlet></router-outlet>
+</div>

@@ -2,7 +2,7 @@
 <nav class="container" [ngClass]="{'init' : init}">
     <div class="container__navbar">
         <!-- Logo -->
-        <img src="assets/logo_nav.png" alt="Company Logo" class="navbar__img">
+        <img src="assets/logo_nav.png" alt="Company Logo" class="navbar__img" routerLink="home">
 
         <!-- Menu -->
         <div class="navbar__menu">
@@ -22,10 +22,9 @@
     <!-- Menu Open -->
     <div class="menu__open" [ngClass]="{'-active' : active}">
         <i class="open__close fa-solid fa-xmark" (click)="activarMenu(false)"></i>
-        <a routerLink="home" class="open__element">Home</a>
-        <a routerLink="cotizar" class="open__element">Cotizar</a>
-        <a routerLink="faq" class="open__element">FAQs</a>
-        <a routerLink="" class="open__element">Menú</a>
+        <a routerLink="home" class="open__element" (click)="routerL('home')">Home</a>
+        <a routerLink="cotizar" class="open__element" (click)="routerL('cotizar')">Cotizar</a>
+        <a routerLink="faq" class="open__element" (click)="routerL('faq')">FAQs</a>
     </div>
 
 </nav>
