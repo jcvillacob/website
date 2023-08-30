@@ -11,6 +11,8 @@ import { FaqComponent } from './components/faq/faq.component';
 import { AboutComponent } from './components/about/about.component';
 import { SwiperComponent } from './components/home/swiper/swiper.component';
 import { ContactComponent } from './components/home/contact/contact.component';
+import { ServiciosComponent } from './components/home/servicios/servicios.component';
+import { ServicComponent } from './components/servic/servic.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ContactComponent } from './components/home/contact/contact.component';
     FaqComponent,
     AboutComponent,
     SwiperComponent,
-    ContactComponent
+    ContactComponent,
+    ServiciosComponent,
+    ServicComponent
   ],
   imports: [
     BrowserModule,

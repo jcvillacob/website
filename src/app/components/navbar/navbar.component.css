@@ -81,6 +81,11 @@
     padding: 10px;
 }
 
+.open__element:hover {
+    cursor: pointer;
+
+}
+
 .open__close {
     position: absolute;
     top: 30px;

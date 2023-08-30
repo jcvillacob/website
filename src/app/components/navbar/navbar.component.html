@@ -22,9 +22,10 @@
     <!-- Menu Open -->
     <div class="menu__open" [ngClass]="{'-active' : active}">
         <i class="open__close fa-solid fa-xmark" (click)="activarMenu(false)"></i>
-        <a routerLink="home" class="open__element" (click)="routerL('home')">Home</a>
-        <a routerLink="cotizar" class="open__element" (click)="routerL('cotizar')">Cotizar</a>
-        <a routerLink="faq" class="open__element" (click)="routerL('faq')">FAQs</a>
+        <a class="open__element" (click)="routerL('home')">Home</a>
+        <a class="open__element" (click)="routerL('cotizar')">Cotizar</a>
+        <a class="open__element" (click)="routerL('servicios')">Servicios</a>
+        <a class="open__element" (click)="routerL('faq')">FAQs</a>
     </div>
 
 </nav>

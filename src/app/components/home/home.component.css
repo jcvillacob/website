@@ -16,7 +16,9 @@
     background-position: center center;
 }
 
-/* PRIMERA SECCION */
+
+
+/* ------------------- PRIMERA SECCION ------------------- */
 .-primera {
     display: flex;
     width: 100%;
@@ -25,15 +27,21 @@
     padding: 0;
 }
 
-/* PRIMER SWIPPER */
 .-primera {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 
 
 /* ------------------- SEGUNDA SECCION ------------------- */
-.-segunda {
+
+
+
+
+
+/* .-segunda {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +269,7 @@
         font-size: 18px;
     }
 }
-
+ */
 
 
 
@@ -408,7 +416,7 @@
 
 
 
-/* CUARTA SECCION */
+/* ------------------- CUARTA SECCION ------------------- */
 .-cuarta {
     display: flex;
     justify-content: center;
@@ -416,8 +424,12 @@
 }
 
 
- /* QUINTA SECCION */
-.-quinta {
 
+
+/* ------------------- QUINTA SECCION ------------------- */
+.-quinta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
