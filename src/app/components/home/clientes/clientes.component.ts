@@ -10,19 +10,19 @@ declare var Swiper: any;
 })
 export class ClientesComponent implements AfterViewInit {
   logos: any[] = [
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
-    { name: '', logo: 'assets/clientes/stepan.jpg' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
+    { name: '', logo: 'assets/clientes/stepan.webp' },
   ];
 
   ngAfterViewInit() {

@@ -1,0 +1,234 @@
+.servicios-container {
+    --color-primary: #EE2C37;
+    --font-color: rgb(29, 28, 28);
+    padding: 130px 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* Titulo */
+.servicios-container__title {
+    margin: 25px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.servicios-container__subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.subtitle__text {
+    font-size: 20px;
+    width: 50%;
+}
+
+.subtitle__image {
+    width: 50%;
+}
+
+.image__img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+
+
+/* cards servicios */
+.servicios-container__servicios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 80px 0;
+}
+
+.servicios__title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    width: auto;
+}
+
+.servicios__title::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 15px;
+    background-color: #ee2c3662;
+    position: absolute;
+    top: 70%;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+
+.servicios-container__cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cards__card {
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.281);
+    gap: 25px;
+}
+
+.card__header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.card__body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.body__title {
+    position: relative;
+}
+
+.body__title h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.body__desc p {
+    font-size: 14px;
+}
+
+.body__title::after {
+    content: '';
+    width: 85px;
+    height: 3px;
+    position: absolute;
+    background-color: #EE2C37;
+    border-radius: 3px;
+    left: 35%;
+    top: 110%;
+}
+
+/* Vehículos */
+.cards__card.-vh {
+    width: 20%;
+    min-width: 300px;
+}
+
+.vh__body {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.body__title.-vh,
+.body__desc.-vh {
+    background-color: #ffffff9f;
+    padding: 15px 8px;
+}
+
+.body__title.-vh h3 {
+    font-size: 25px;
+}
+
+
+/* Ubicaciones */
+.mapa-container {
+    width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    .servicios-container {
+        padding: 130px 40px 0;
+    }
+
+    .servicios-container__subtitle {
+        flex-direction: column;
+    }
+
+    .subtitle__text {
+        width: 90%;
+    }
+
+    .subtitle__image {
+        width: 70%;
+    }
+
+    .mapa-container {
+        width: 50%;
+    }
+
+    .servicios-container__servicios {
+        margin: 40px 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .servicios-container {
+        padding: 130px 15px 0;
+    }
+
+    .servicios-container__title {
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .servicios-container__subtitle {
+        gap: 25px;
+    }
+
+    .subtitle__text {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .subtitle__image {
+        width: 90%;
+    }
+    
+    .servicios__title {
+        font-size: 28px;
+    }
+
+    .servicios__title::before {
+        width: 150px;
+        left: 15%;
+    }
+
+    .mapa-container {
+        width: 90%;
+    }
+
+    .servicios-container__servicios {
+        margin: 20px 0;
+    }
+
+}

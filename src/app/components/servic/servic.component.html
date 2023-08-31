@@ -1,1 +1,87 @@
-<p>servic works!</p>
+<div class="servicios-container">
+    <!-- Titulo -->
+    <h1 class="servicios-container__title">Centro de Servicios</h1>
+
+    <!-- Subtitulos -->
+    <div class="servicios-container__subtitle">
+        <p class="subtitle__text">Servicio de alta disponibilidad contando con una gran despliegue de mantenimiento a lo
+            largo del
+            país.Servicio de alta disponibilidad contando con una gran despliegue de mantenimiento a lo largo del país.
+            Servicio de alta disponibilidad contando con una gran despliegue de mantenimiento a lo largo del país.
+        </p>
+
+        <div class="subtitle__image">
+            <img src="../../../assets/servicios/group.jpg" alt="" class="image__img">
+        </div>
+    </div>
+
+    <!-- Servicios que ofrecemos -->
+    <div class="servicios-container__servicios">
+        <h2 class="servicios__title">Servicios que Ofrecemos</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi eveniet, delectus, eius cupiditate
+            saepe suscipit perspiciatis totam vero explicabo pariatur eos obcaecati sint animi assumenda velit,
+            exercitationem mollitia perferendis.
+        </p>
+
+        <div class="servicios-container__cards">
+            <div class="cards__card" *ngFor="let servicio of servicios; index as i">
+                <div class="card__header">
+                    <img src="{{servicio.img}}" style="max-width: 230px;" alt="" class="header__img">
+                </div>
+                <div class="card__body">
+                    <div class="body__title">
+                        <h3>{{ servicio.name }}</h3>
+                    </div>
+                    <div class="body__desc">
+                        <p>{{ servicio.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Vehículos -->
+    <div class="servicios-container__servicios">
+        <h2 class="servicios__title">Vehículos Disponibles</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi eveniet, delectus, eius cupiditate
+            saepe suscipit perspiciatis totam vero explicabo pariatur eos obcaecati sint animi assumenda velit,
+            exercitationem mollitia perferendis.
+        </p>
+
+        <div class="servicios-container__cards">
+            <div class="cards__card -vh" *ngFor="let vehiculo of vehiculos; index as i"
+                style="background-image: url('{{vehiculo.img}}'); background-size: cover; background-repeat: no-repeat;">
+                <div class="vh__body">
+                    <div class="body__title -vh">
+                        <h3>{{ vehiculo.name }}</h3>
+                    </div>
+                    <div class="body__desc -vh">
+                        <p><strong>Peso Máximo: </strong> {{ vehiculo.peso }} Kg</p>
+                        <p><strong>Volumen Máximo: </strong> {{ vehiculo.vol }} Gal</p>
+                        <p><strong>Cantidad de Ejes: </strong> {{ vehiculo.ejes }} Ejes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sedes -->
+    <div class="servicios-container__servicios">
+        <h2 class="servicios__title">Nuestras Sedes</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi eveniet, delectus, eius cupiditate
+            saepe suscipit perspiciatis totam vero explicabo pariatur eos obcaecati sint animi assumenda velit,
+            exercitationem mollitia perferendis.
+        </p>
+
+        <div class="mapa-container">
+            <img src="../../../assets/servicios/mapa.webp" alt="" class="mapa__img">
+        </div>
+
+    </div>
+
+
+</div>

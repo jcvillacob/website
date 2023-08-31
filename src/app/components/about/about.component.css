@@ -1,0 +1,165 @@
+.about__container {
+    padding: 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__frase {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+    padding: 25px;
+    position: relative;
+}
+
+.frase__background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/equipo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frase__texto,
+.frase__quote {
+    width: auto;
+    color: #fff;
+    filter: brightness(100);
+}
+
+.frase__quote {
+    font-size: 78px;
+    
+}
+
+.frase__texto {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+/*  */
+.container__proposito {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.proposito__img {
+    width: 65%;
+}
+
+
+
+/* CARDS */
+.container__somos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.somos__title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    width: auto;
+    margin-bottom: 45px;
+}
+
+.somos__title::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 15px;
+    background-color: #ee2c3662;
+    position: absolute;
+    top: 70%;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.somos__cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.cards__card {
+    max-width: 440px;
+    min-width: 330px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.192);
+    padding: 35px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.card__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__header,
+.header__signo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__signo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EE2C37;
+}
+
+.header__signo i {
+    width: auto;
+    font-size: 25px;
+    color: #fff;
+}
+
+.card__body {
+    width: 90%;
+}
+
+.body__list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.list__element {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.list__element span {
+    font-size: 28px;
+    font-weight: 600;
+}
