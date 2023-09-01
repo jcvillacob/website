@@ -13,6 +13,7 @@ import { SwiperComponent } from './components/home/swiper/swiper.component';
 import { ContactComponent } from './components/home/contact/contact.component';
 import { ServiciosComponent } from './components/home/servicios/servicios.component';
 import { ServicComponent } from './components/servic/servic.component';
+import { TimeComponent } from './components/about/time/time.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ServicComponent } from './components/servic/servic.component';
     SwiperComponent,
     ContactComponent,
     ServiciosComponent,
-    ServicComponent
+    ServicComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,

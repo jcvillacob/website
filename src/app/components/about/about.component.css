@@ -6,6 +6,9 @@
     align-items: center;
 }
 
+
+
+/* ======== FRASE ======== */
 .container__frase {
     width: 100%;
     height: 100vh;
@@ -13,7 +16,7 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 25px;
     position: relative;
 }
@@ -40,7 +43,6 @@
 
 .frase__quote {
     font-size: 78px;
-    
 }
 
 .frase__texto {
@@ -49,32 +51,141 @@
     font-weight: 500;
 }
 
+/* Media */
+@media screen and (max-width: 700px) {
+    .container__frase {
+        flex-direction: column;
+    }
 
-/*  */
+    .frase__quote {
+        font-size: 58px;
+    }
+    
+    .frase__texto {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 500;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .container__frase {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .frase__quote {
+        font-size: 58px;
+    }
+    
+    .frase__texto {
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 500;
+    }    
+}
+
+
+
+/* ======== TEXTO ======== */
+.container__texto, .container__texto-c {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.container__texto-c {
+    flex-direction: column;
+    padding: 0 35px;
+    gap: 25px;
+}
+
+.texto__info, .texto__image {
+    width: 45%;
+}
+
+.texto__info {
+    font-size: 18px;
+}
+
+/* Media */
+@media screen and (max-width: 1000px) {
+    .container__texto-c {
+        padding: 0 15px;
+    }
+
+    .container__texto {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .texto__info {
+        width: 85%;
+    }
+    
+    .texto__image {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .texto__info {
+        width: 90%;
+    }
+    
+    .texto__image {
+        width: 90%;
+    }  
+}
+
+
+
+/* ======== IMAGEN PROPOSITO ======== */
 .container__proposito {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .proposito__img {
-    width: 65%;
+    width: 60%;
+}
+
+/* Media */
+@media screen and (max-width: 1100px) {
+    .proposito__img {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .proposito__img {
+        width: 95%;
+    }
 }
 
 
 
-/* CARDS */
-.container__somos {
+/* ======== CARDS ======== */
+.container__somos, .container__time {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    padding: 50px 0;
 }
 
-.somos__title {
+.container__somos {
+    background-color: #ee2c3621;
+}
+
+.somos__title, .time__title {
     font-size: 32px;
     font-weight: 500;
     text-align: center;
@@ -83,7 +194,7 @@
     margin-bottom: 45px;
 }
 
-.somos__title::before {
+.somos__title::before, .time__title::before {
     content: '';
     display: block;
     width: 50%;
@@ -105,12 +216,13 @@
 
 .cards__card {
     max-width: 440px;
-    min-width: 330px;
-    width: 35%;
+    min-width: 280px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #f8f8f8;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.192);
     padding: 35px;
     border-radius: 15px;
@@ -162,4 +274,19 @@
 .list__element span {
     font-size: 28px;
     font-weight: 600;
+}
+
+/* Media */
+@media screen and (max-width: 750px) {
+    .somos__cards {
+        gap: 35px;
+    }
+
+    .list__element {
+        font-size: 18px;
+    }
+    
+    .list__element span {
+        font-size: 24px;
+    }
 }

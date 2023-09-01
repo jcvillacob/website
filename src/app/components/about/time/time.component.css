@@ -1,0 +1,129 @@
+.time__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__check {
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    position: relative;
+}
+
+.container__check:nth-child(odd) {
+    translate: -50%;
+    border-right: 2px solid rgba(0, 0, 0, 0.877);
+}
+
+.container__check:nth-child(even) {
+    translate: calc(50% - 2px);
+    border-left: 2px solid rgba(0, 0, 0, 0.877);
+}
+
+.container__check:nth-child(even)::before,
+.container__check:nth-child(odd)::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+}
+
+.container__check:nth-child(even)::before {
+    left: 0;
+}
+
+.container__check:nth-child(odd)::before {
+    right: 0;
+}
+
+.check__revision {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #66797d;
+    box-shadow: 3px 3px 10px #30181918;
+}
+
+.container__check:nth-child(odd) .check__revision::before,
+.container__check:nth-child(even) .check__revision::before {
+    content: '';
+    background-color: #EE2C37;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container__check:nth-child(even) .check__revision::before {
+    left: -7px;
+}
+
+.container__check:nth-child(odd) .check__revision::before {
+    right: -7px;
+}
+
+.revision__title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fffffff3;
+}
+
+.revision__info {
+    font-size: 16px;
+    color: #ffffffe5;
+}
+
+/* ======== MEDIA QUERY ======== */
+@media screen and (max-width: 1000px) {
+    .container__check {
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .container__check {
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container__check {
+        max-width: 350px;
+    }
+
+    .container__check {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container__check:nth-child(even),
+    .container__check:nth-child(odd) {
+        border: 0;
+        translate: 0;
+    }
+
+
+    .container__check:nth-child(even)::before,
+    .container__check:nth-child(odd)::before {
+        rotate: -90deg;
+        width: 60px;
+        top: 0;
+        left: 43.5%;
+    }
+
+    .container__check:nth-child(odd) .check__revision::before,
+    .container__check:nth-child(even) .check__revision::before {
+        top: 0;
+        left: 50%;
+        transform: translateY(0%);
+    }
+
+}
