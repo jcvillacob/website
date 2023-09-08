@@ -14,6 +14,7 @@ import { ContactComponent } from './components/home/contact/contact.component';
 import { ServiciosComponent } from './components/home/servicios/servicios.component';
 import { ServicComponent } from './components/servic/servic.component';
 import { TimeComponent } from './components/about/time/time.component';
+import { AmbientalComponent } from './components/ambiental/ambiental.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TimeComponent } from './components/about/time/time.component';
     ContactComponent,
     ServiciosComponent,
     ServicComponent,
-    TimeComponent
+    TimeComponent,
+    AmbientalComponent
   ],
   imports: [
     BrowserModule,

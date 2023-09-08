@@ -182,7 +182,7 @@
 }
 
 .container__somos {
-    background-color: #ee2c3621;
+    background-color: #CACFD0;
 }
 
 .somos__title, .time__title {
@@ -222,7 +222,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f8f8f8;
+    background-color: #FFF;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.192);
     padding: 35px;
     border-radius: 15px;
