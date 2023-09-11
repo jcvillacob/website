@@ -109,6 +109,34 @@ input, select, textarea {
     color: rgba(0, 0, 0, 0.74);
 }
 
+/* Button */
+.form__submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit__btn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #EE2C37;
+    color: #fff;
+    display: block;
+    width: auto;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 8px;
+    margin: 20px 0 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+    transition: all 0.3s;
+}
+
+.submit__btn:hover {
+ cursor: pointer;
+ scale: 1.05;
+ background-color: #212529;
+}
+
 
 @media screen and (max-width: 1000px) {
     .container__cotizar {

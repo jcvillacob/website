@@ -1,0 +1,56 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 510" width="720" height="510">
+	<title>procter-svg</title>
+	<defs>
+		<radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(404.322,0,0,404.322,234.83,122.261)">
+			<stop offset="0" stop-color="#00a1df"/>
+			<stop offset=".13" stop-color="#0092d7"/>
+			<stop offset=".37" stop-color="#006cc1"/>
+			<stop offset=".62" stop-color="#003da6"/>
+			<stop offset=".73" stop-color="#043799"/>
+			<stop offset=".93" stop-color="#102777"/>
+			<stop offset="1" stop-color="#152169"/>
+		</radialGradient>
+		<radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(670.392,0,0,670.392,205.396,71.383)">
+			<stop offset=".02" stop-color="#ffffff"/>
+			<stop offset=".03" stop-color="#fbfeff"/>
+			<stop offset=".09" stop-color="#bae7f9"/>
+			<stop offset=".14" stop-color="#87d5f4"/>
+			<stop offset=".19" stop-color="#63c9f1"/>
+			<stop offset=".23" stop-color="#4cc1ef"/>
+			<stop offset=".26" stop-color="#44beee"/>
+			<stop offset=".28" stop-color="#37b8eb"/>
+			<stop offset=".35" stop-color="#19ace5"/>
+			<stop offset=".41" stop-color="#07a4e0"/>
+			<stop offset=".45" stop-color="#00a1df"/>
+			<stop offset=".79" stop-color="#0045ab"/>
+			<stop offset=".82" stop-color="#003da6"/>
+			<stop offset=".96" stop-color="#0059b6"/>
+		</radialGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d=""/>
+		</clipPath>
+		<radialGradient id="g3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(272.387,0,0,272.387,311.424,212.257)">
+			<stop offset=".32" stop-color="#44beee" stop-opacity="0"/>
+			<stop offset=".48" stop-color="#2b99d9" stop-opacity=".27"/>
+			<stop offset=".67" stop-color="#1476c6" stop-opacity=".58"/>
+			<stop offset=".82" stop-color="#0561ba" stop-opacity=".84"/>
+			<stop offset=".92" stop-color="#0059b6" stop-opacity="1"/>
+		</radialGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: url(#g3) } 
+		.s3 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m359.5 471c-119.7 0-216.5-96.8-216.5-216.5 0-119.7 96.8-216.5 216.5-216.5 119.7 0 216.5 96.8 216.5 216.5 0 119.7-96.8 216.5-216.5 216.5z"/>
+	<path id="Layer" class="s1" d="m200.5 254.4c0-99.1 62.6-183.7 150.5-216.2-115.6 4.5-208 99.6-208 216.3 0 116.8 92.6 212 208.3 216.3-88-32.5-150.8-117.1-150.8-216.4z"/>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<path id="Layer" class="s2" d="m200.5 254.4c0-99.1 62.6-183.7 150.5-216.2-115.6 4.5-208 99.6-208 216.3 0 116.8 92.6 212 208.3 216.3-88-32.5-150.8-117.1-150.8-216.4z"/>
+	</g>
+	<g id="Layer">
+		<path id="Layer" fill-rule="evenodd" class="s3" d="m282.3 268.5l-12.3 39c-1.3 5 2.4 8.6 4.9 9.1h-46.9c2.7-0.6 7.8-5.1 9.1-9.4l33.8-108c1-2.7 1.8-7.1-3.1-10.4h58c17.5 0 44.4 9.7 30 45.1-17 42.2-73.5 34.6-73.5 34.6zm21.9-69.7l-18.8 59.8c0 0 25.5 7 37-26.8 11-32.2-6-33-12.2-33z"/>
+		<path id="Layer" fill-rule="evenodd" class="s3" d="m381.6 307.1c-2.4 1.7-16.1 11.1-29.9 11.4-12.8 0.2-20.7-4.4-25.4-11.7-2.7-4.3-3.6-9-3.6-13.2 0-4.9 1.2-9.1 2-11 6.7-15.3 25.2-20.2 32.2-22.8 0 0 1-0.4 1.5-0.6 0-0.7-0.1-1.9-0.1-3.6 0-6.6 1.2-21.4 10.7-30.3 2.7-2.5 8.1-5.9 14.4-7.1 7.9-1.4 15.3 0.5 20.1 5.2 2.7 2.7 4.2 6.3 4.2 10.2v0.5c-0.1 3.6-1.7 9.3-8.4 15.2-7.2 6.3-16.2 9.8-22.7 13 1.8 11.9 7 20 11.8 27.1 2.7-3.4 4.2-8.4 4.2-11.9 0-3.9-3.2-5.7-3.2-5.7h16.4c-1.1 13.4-7 20-11.8 25.3 5.9 6.8 20.8 16.3 30.9 19.6h-31.5c-3.3-1.6-9.5-7.4-11.8-9.6zm8.9-82c-3.4-1.2-7.7 1-10.9 5.9-4.8 7.4-5.1 16.6-4.5 22.4 3.3-1.4 16.6-11.8 18.3-22.1 0.2-2.7-0.1-5.2-2.9-6.2zm-30.3 44.3c-6.5 2.7-18.3 10.7-18.3 21.6-0.1 12.8 10.5 15.2 16.9 14.6 6.8-0.6 14.2-4.4 16-5.5-6.2-8.3-12.1-20.2-14.6-30.7z"/>
+		<path id="Layer" class="s3" d="m489.3 198.9c18.7-4.5 34.2 10.1 35.6 11.2l5.3-17.1c-7.4-2.2-61.2-20.4-99.3 23-23.3 26.7-29.1 81.4 0.6 96.1 31.7 15.7 66.8-2.4 69.4-3.7l14.5-46.1c1.5-5.6 5.1-9.2 11.3-11.6h-50.4c7.4 3.1 6.8 8.6 6.3 10.9l-14.5 46.2c-1.9 0.3-42.4 10.4-19.8-60.5 5-15.2 18.7-43.1 41-48.4z"/>
+	</g>
+</svg>

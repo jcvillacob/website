@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cotizar.component.css']
 })
 export class CotizarComponent {
+  tipoVh!: string;
+
+  sendForm() {
+    
+  }
 
 }

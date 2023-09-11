@@ -7,10 +7,10 @@
     <div class="container__cotizar">
         <!-- Logos -->
         <div class="cotizar__logos">
-            <img src="assets/cotizar-envio.png" alt="Calculadora" class="logos__calculadora">
+            <img src="../../../assets/logo22.png" alt="Calculadora" class="logos__calculadora">
             <hr>
             <div class="logos__coordi">
-                <i class="fa-solid fa-truck coordi__i"></i>
+                <!-- <i class="fa-solid fa-truck coordi__i"></i> -->
                 <h2 class="coordi__texto">Coordinadora de Tanques</h2>
             </div>
         </div>
@@ -18,7 +18,7 @@
 
         <!-- Formulario -->
         <div class="cotizar__formulario">
-            <form class="formulario__form">
+            <form class="formulario__form" (ngSubmit)="sendForm()">
                 <p class="form__p">De una manera ágil y oportuna podrá conocer el costo de sus envíos a nivel nacional.
                 </p>
 
@@ -96,7 +96,7 @@
                    <div class="seccion__labels">
                         <div class="labels__label">
                             <label for="vehiculo" class="label__title">Tipo de Vehículo: </label>
-                            <select name="vehiculo" id="vehiculo">
+                            <select name="vehiculo" id="vehiculo" [(ngModel)]="tipoVh">
                                 <option value="">Seleccione Tipo de Vehículo</option>
                                 <option value="TM">Tractomula</option>
                                 <option value="DT">Doble Troque</option>
@@ -105,9 +105,17 @@
                         </div>
                         <div class="labels__label">
                             <h4>Capacidad Máxima: </h4>
-                            <ul style="margin-top: 10px;">
+                            <ul style="margin-top: 10px;" *ngIf="tipoVh === 'TM'">
                                 <li><span>10.800 Galones</span></li>
                                 <li><span>34.000 Kilogramos</span></li>
+                            </ul>
+                            <ul style="margin-top: 10px;" *ngIf="tipoVh === 'DT'">
+                                <li><span>5.500 Galones</span></li>
+                                <li><span>18.000 Kilogramos</span></li>
+                            </ul>
+                            <ul style="margin-top: 10px;" *ngIf="tipoVh === 'SC'">
+                                <li><span>3.400 Galones</span></li>
+                                <li><span>10.000 Kilogramos</span></li>
                             </ul>
                         </div>
                     </div>
@@ -127,6 +135,11 @@
                             <textarea type="text" name="observaciones" id="observaciones"></textarea>
                         </div>
                     </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form__submit">
+                    <button type="submit" class="submit__btn"> Enviar Cotización </button>
                 </div>
 
             </form>

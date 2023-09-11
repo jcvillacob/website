@@ -15,6 +15,8 @@ import { ServiciosComponent } from './components/home/servicios/servicios.compon
 import { ServicComponent } from './components/servic/servic.component';
 import { TimeComponent } from './components/about/time/time.component';
 import { AmbientalComponent } from './components/ambiental/ambiental.component';
+import { VideoinitComponent } from './components/home/videoinit/videoinit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { AmbientalComponent } from './components/ambiental/ambiental.component';
     ServiciosComponent,
     ServicComponent,
     TimeComponent,
-    AmbientalComponent
+    AmbientalComponent,
+    VideoinitComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
