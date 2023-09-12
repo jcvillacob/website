@@ -171,7 +171,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 25px;
+    padding: 0px;
 }
 
 .body__title.-vh,
@@ -180,9 +180,19 @@
     padding: 15px 8px;
 }
 
+.body__title.-vh {
+    margin: 25px;
+    width: calc(100% - 50px);
+}
+
 .body__title.-vh h3 {
     font-size: 25px;
 }
+
+.body__desc.-vh p {
+    color: black;
+}
+
 
 
 /* Ubicaciones */
