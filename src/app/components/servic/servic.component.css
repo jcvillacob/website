@@ -26,6 +26,8 @@
 
 }
 
+
+/* Subtitle */
 .subtitle__text {
     font-size: 18px;
     width: 50%;
@@ -39,6 +41,64 @@
     width: 100%;
     border-radius: 7px;
 }
+
+
+/* Contador de Números */
+.servicios-container__numbers {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers__flota {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    min-width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flota__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.element__number {
+    color: #66797d;
+}
+
+.element__title {
+    color: #072A30;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .servicios-container__numbers {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .numbers__flota {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .numbers__flota {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
 
 
 

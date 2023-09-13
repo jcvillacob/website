@@ -14,6 +14,33 @@
         </div>
     </div>
 
+
+    <!-- Contador de Números -->
+    <div class="servicios-container__numbers">
+        <div class="numbers__flota">
+            <div class="flota__element" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event, 'Vehículos Propios', 75)">
+                <h1 class="element__number">{{ counters['Vehículos Propios'] | number }}</h1>
+                <h3 class="element__title">Vehículos Propios</h3>
+            </div>
+            <div class="flota__element" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event, 'Terceros Vinculados', 300)">
+                <h1 class="element__number">+ {{ counters['Terceros Vinculados'] | number }}</h1>
+                <h3 class="element__title">Terceros Vinculados</h3>
+            </div>
+        </div>
+        <div class="numbers__flota" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event, 'Galones', 512598500)">
+            <div class="flota__element">
+                <h1 class="element__number">+ {{ counters['Galones'] | number }}</h1>
+                <h3 class="element__title">Galones Movilizados 2022</h3>
+            </div>
+            <div class="flota__element" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event, 'Destinos', 636)">
+                <h1 class="element__number">{{ counters['Destinos'] | number }}</h1>
+                <h3 class="element__title">Destinos</h3>
+            </div>
+        </div>
+
+    </div>
+
+
     <!-- Servicios que ofrecemos -->
     <div class="servicios-container__servicios">
         <h2 class="servicios__title">Servicios que Ofrecemos</h2>
