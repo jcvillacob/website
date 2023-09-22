@@ -1,13 +1,15 @@
 <div class="servicios-container">
     <!-- Titulo -->
-    <h1 class="servicios-container__title">Nuestro centro de Servicios</h1>
-
+    
     <!-- Subtitulos -->
     <div class="servicios-container__subtitle">
-        <p class="subtitle__text">
-            En Coorditanques pesamos en ti, hemos adquirido un mundo de experiencias a lo largo de estos años, para
-            apoyarte en la logística y en la distribución de tus productos y mercancías.
-        </p>
+        <div class="container__second">
+            <h1 class="servicios-container__title">Nuestro centro de Servicios</h1>
+            <p class="subtitle__text">
+                En Coorditanques pesamos en ti, hemos adquirido un mundo de experiencias a lo largo de estos años, para
+                apoyarte en la logística y en la distribución de tus productos y mercancías.
+            </p>
+        </div>
 
         <div class="subtitle__image">
             <img src="../../../assets/servicios/Conductores.webp" alt="Servicios" class="image__img">
@@ -18,7 +20,7 @@
     <!-- Contador de Números -->
     <div class="servicios-container__numbers">
         <div class="numbers__flota">
-            <div class="flota__element" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event, 'Vehículos Propios', 75)">
+            <div class="flota__element" inViewport [inViewportOptions]="{ threshold: [0] }" (inViewportAction)="onIntersection($event, 'Vehículos Propios', 175)">
                 <h1 class="element__number">{{ counters['Vehículos Propios'] | number }}</h1>
                 <h3 class="element__title">Vehículos Propios</h3>
             </div>
@@ -122,7 +124,7 @@
         </p>
 
         <div class="mapa-container">
-            <img src="../../../assets/servicios/mapa.webp" alt="" class="mapa__img">
+            <img src="../../../assets/servicios/mapa1.png" alt="" class="mapa__img">
         </div>
 
     </div>

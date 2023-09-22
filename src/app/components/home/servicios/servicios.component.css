@@ -29,14 +29,14 @@
 }
 
 .title__title::after {
-    content: '';
+    /* content: '';
     display: block;
     width: 50%;
     height: 15px;
     background-color: #ee2c3662;
     position: absolute;
     top: 70%;
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%); */
 }
 
 .title__text {

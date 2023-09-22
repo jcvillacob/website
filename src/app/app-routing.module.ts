@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'cotizar', component: CotizarComponent},
   { path: 'about', component: AboutComponent},
   { path: 'servicios', component: ServicComponent},
-  { path: 'ambiental', component: AmbientalComponent},
+  { path: 'sostenibilidad', component: AmbientalComponent},
   { path: 'faq', component: FaqComponent},
 ];
 

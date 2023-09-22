@@ -24,7 +24,7 @@
 .frase__background {
     width: 100%;
     height: 100vh;
-    background-image: url('../../../assets/equipo2.jpg');
+    background-image: url('../../../assets/equipo2-min2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -46,6 +46,7 @@
 }
 
 .frase__texto {
+    margin-top: 50px;
     font-size: 36px;
     font-style: italic;
     font-weight: 500;
@@ -104,12 +105,20 @@
     gap: 25px;
 }
 
-.texto__info, .texto__image {
+.container__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container__second, .texto__image {
     width: 45%;
 }
 
 .texto__info {
     font-size: 18px;
+    margin: auto;
 }
 
 /* Media */
@@ -123,7 +132,7 @@
         gap: 30px;
     }
 
-    .texto__info {
+    .container__second {
         width: 85%;
     }
     
@@ -133,7 +142,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .texto__info {
+    .container__second {
         width: 90%;
     }
     
@@ -154,6 +163,8 @@
 
 .proposito__img {
     width: 60%;
+    max-height: 98vh;
+    object-fit: contain;
 }
 
 /* Media */
@@ -195,14 +206,14 @@
 }
 
 .somos__title::before, .time__title::before {
-    content: '';
+    /* content: '';
     display: block;
     width: 50%;
     height: 15px;
     background-color: #ee2c3662;
     position: absolute;
     top: 70%;
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%); */
 }
 
 .somos__cards {
