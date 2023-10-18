@@ -1,0 +1,126 @@
+.container {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 100px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.objetivo__objetivo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.container__text {
+    width: 90%;
+    font-size: 18px;
+    margin: 20px auto;
+
+}
+
+.container__objetivo {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.objetivo__title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.title__img {
+    max-width: 150px;
+}
+
+.title__img img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.title__text {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.objetivo__body {
+    width: 100%;
+    padding: 20px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+
+/* EDUCACION */
+.objetivo__text {
+    margin: 20px auto;
+    font-size: 18px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.body__card {
+    max-width: 450px;
+    min-width: 320px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.308);
+}
+
+.card__info {
+    max-width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.card__img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.308);
+}
+
+.info__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* AGUA */
+.objetivo__img {
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+.objetivo__img img {
+    border-radius: 15px;
+}

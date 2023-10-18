@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import anime from 'animejs';
 
 @Component({
@@ -7,7 +7,7 @@ import anime from 'animejs';
   styleUrls: ['./ambiental.component.css']
 })
 export class AmbientalComponent implements AfterViewInit {
-  @ViewChildren('demoRef') demoElements!: QueryList<ElementRef>;
+  @ViewChild('llanta') gota!: ElementRef;
   move: boolean = false;
   variablePrueba: any = {
     prop1: 0
@@ -16,45 +16,25 @@ export class AmbientalComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit() {
-  }
-
-  clickBox() {
-    let translate: number, border: string[];
-    if (this.move) {
-      translate = 0;
-      border = ['50%', '0%']
-    } else {
-      translate = 250;
-      border = ['0%', '50%']
-    }
-    this.move = !this.move;
-    this.demoElements.toArray().forEach((element, index) => {
-      if (!element) {
-        console.error('demoElement no está definido');
-        console.log(element);
-        return;
-      }
+    new anime({
+      targets: this.gota.nativeElement,
+      rotate: '3turn',
+      easing: 'easeInOutSine',
+      duration: 1500,
+      direction: 'normal',
+      delay: 4000
+    });
   
-      /* const svgPath = document.querySelectorAll('.css-selector-demo'); */
-      new anime({
-        targets: element.nativeElement,
-        translateX: translate,
-        translateY: 65*index,
-        duration: 1000,
-        backgroundColor: '#FFF',
-        borderRadius: border,
-        easing: 'linear',
-        delay: 1000*index,
-      });
-  });
-
 
     new anime({
-      targets: this.variablePrueba,
-      prop1: 500,
-      round: 1,
-      duration: 1900,
-      easing: 'linear',
+      targets: this.gota.nativeElement.querySelectorAll('.cls-1, .cls-2, .cls-3, .cls-4'),
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 700,
+      loop: false,
+      direction: 'normal',
+      delay: (el: any, i: any) => i * 240 
     });
   }
+
 }

@@ -13,7 +13,8 @@ export class ClientesComponent implements AfterViewInit {
     { name: 'Pintuco', logo: 'assets/clientes/pintuco.svg' },
     { name: 'QBCO', logo: 'assets/clientes/logo-qbco.png' },
     { name: 'Explorer', logo: 'assets/clientes/explorer.svg' },
-    { name: 'Stepan', logo: 'assets/clientes/stepan2.webp' },
+    { name: 'Dow Quimica', logo: 'assets/clientes/dow.svg' },
+    
     { name: 'Messer', logo: 'assets/clientes/messer.png' },
     { name: 'Terpel', logo: 'assets/clientes/terpel.svg' },
     { name: 'P&G', logo: 'assets/clientes/procter.svg' },
@@ -21,7 +22,7 @@ export class ClientesComponent implements AfterViewInit {
     { name: 'Conquimica', logo: 'assets/clientes/conquimica.png' },
     { name: 'Importex', logo: 'assets/clientes/importex.png' },
     { name: 'Vaselinas', logo: 'assets/clientes/vasilen.png' },
-    { name: 'Dow Quimica', logo: 'assets/clientes/dow.svg' },
+    { name: 'Stepan', logo: 'assets/clientes/stepan2.webp' },
     { name: 'Rocsa', logo: 'assets/clientes/rocsa.png' },
     { name: 'Chemisphere', logo: 'assets/clientes/chemisphere.png' },
     { name: 'Central Oil', logo: 'assets/clientes/centraloil.png' },
