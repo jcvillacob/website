@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-servic',
@@ -22,7 +22,7 @@ export class ServicComponent {
   ];
 
 
-  constructor(private renderer: Renderer2) { }
+  constructor() { }
 
   public onIntersection({ target, visible }: { target: Element; visible: boolean }, title: string, targetValue: number): void {
     if (visible && !this.counters[title]) {

@@ -19,6 +19,7 @@ import { AmbientalComponent } from './components/ambiental/ambiental.component';
 import { VideoinitComponent } from './components/home/videoinit/videoinit.component';
 import { FormsModule } from '@angular/forms';
 import { OdsComponent } from './components/ambiental/ods/ods.component';
+import { IndicadoresComponent } from './components/ambiental/indicadores/indicadores.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { OdsComponent } from './components/ambiental/ods/ods.component';
     TimeComponent,
     AmbientalComponent,
     VideoinitComponent,
-    OdsComponent
+    OdsComponent,
+    IndicadoresComponent
   ],
   imports: [
     BrowserModule,
