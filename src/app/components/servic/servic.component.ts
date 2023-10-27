@@ -17,8 +17,8 @@ export class ServicComponent {
   ];
   vehiculos: any[] = [
     { name: 'Tractomula', ejes: '6', peso: '34.000', vol: '10.800', img: '../../../../assets/vhs/tm.jpg' },
-    { name: 'Dobletroque', ejes: '3', peso: '18.000', vol: '5.500', img: '../../../../assets/vhs/tm.jpg' },
-    { name: 'Sencillo', ejes: '2', peso: '10.000', vol: '3.400', img: '../../../../assets/vhs/tm.jpg' },
+    { name: 'Dobletroque', ejes: '3', peso: '18.000', vol: '5.500', img: '../../../../assets/vhs/dt.jpg' },
+    { name: 'Sencillo', ejes: '2', peso: '10.000', vol: '3.400', img: '../../../../assets/vhs/sc.jpg' },
   ];
 
 

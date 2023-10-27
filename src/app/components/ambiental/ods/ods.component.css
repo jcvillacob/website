@@ -124,3 +124,49 @@
 .objetivo__img img {
     border-radius: 15px;
 }
+
+/* Media */
+@media screen and (max-width: 1000px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .container__text {
+        width: 95%;    
+    }
+
+    .container__objetivo {
+        padding: 18px;
+    }
+
+    .objetivo__objetivo {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container__title {
+        font-size: 28px;
+    }
+
+    .objetivo__title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title__img {
+        max-width: 250px;
+    }
+
+    .container__objetivo {
+        padding: 0;
+    }
+
+    .objetivo__objetivo {
+        margin-bottom: 70px;
+    }
+
+    .card__text {
+        font-size: 14px;
+    }
+}
