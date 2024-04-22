@@ -7,9 +7,13 @@
                 <div class="header__question"><span>{{ faq.question }}</span></div>
                 <div class="header__item"></div>
             </div>
-            <div class="question__body">
-                {{ faq.answer }}
+            <div class="question__body" >
+                <div class="question__parag" *ngFor="let paragraph of faq.answer">
+                    {{ paragraph }}
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>

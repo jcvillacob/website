@@ -19,8 +19,7 @@
         <!-- Formulario -->
         <div class="cotizar__formulario">
             <form class="formulario__form" (ngSubmit)="sendForm()">
-                <p class="form__p">De una manera ágil y oportuna podrá conocer el costo de sus envíos a nivel nacional.
-                </p>
+                <p class="form__p">Conoce de mi primera mano el costo de las rutas a nivel nacional.</p>
 
                 <!-- Datos de Empresa -->
                 <div class="form__seccion">
@@ -97,7 +96,6 @@
                         <div class="labels__label">
                             <label for="vehiculo" class="label__title">Tipo de Vehículo: </label>
                             <select name="vehiculo" id="vehiculo" [(ngModel)]="tipoVh">
-                                <option value="">Seleccione Tipo de Vehículo</option>
                                 <option value="TM">Tractomula</option>
                                 <option value="DT">Doble Troque</option>
                                 <option value="SC">Sencillo</option>
@@ -147,3 +145,5 @@
     </div>
 
 </div>
+
+<app-footer></app-footer>

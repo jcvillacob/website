@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    background: linear-gradient(to right, #cacfd754, #cacfd754);
+    border-top-left-radius: 30% 15%;
+    border-top-right-radius: 30% 15%;
+}
+
+
+
+
+/* Iconos */
+.container__icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icons__redes {
+    width: auto;
+    font-size: 30px;
+    color: #212529;
+    transition: all 0.3s;
+}
+.icons__redes:hover {
+    cursor: pointer;
+    scale: 1.15;
+    color: #EE2C37;
+}
+
+/* Datos */
+.informacion__datos {
+    margin-left: 35px;
+    width: 850px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.datos__logos, .datos__datos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+}
+.datos__datos {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logos__logo {
+    max-width: 80px;
+    object-fit: contain;
+}
+.logos__logo2 {
+    max-width: 180px;
+    object-fit: contain;
+}
+
+
+/* Informacion */
+.container__informacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.informacion__politicas {
+    margin-right: 20px;
+    width: 850px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.politicas__links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.politicas__link {
+    width: auto;
+    font-size: 14px;
+    color: #2e2e2e;
+    transition: all 0.3s;
+}
+.politicas__link:hover  {
+    cursor: pointer;
+    font-size: 16px;
+    color: #EE2C37;
+}
+.politicas__derechos {
+    width: 100%;
+    font-size: 12px;
+    color: #505050;
+    display: flex;
+    justify-content: flex-end;
+}
+.derechos__right {
+    width: auto;
+}
+
+/* Media */
+@media screen and (max-width: 700px) {
+    .container__informacion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .informacion__datos, .informacion__politicas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        margin: 0;
+    }
+
+    .datos__logos {
+        justify-content: center;
+    }
+
+    .informacion__politicas {
+        max-width: 80%;
+    }
+}
+

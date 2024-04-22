@@ -10,11 +10,11 @@ declare var Swiper: any;
 })
 export class ServiciosComponent implements AfterViewInit {
   cards: any[] = [
-    {img: '../../../../assets/servicios/mula.png', title: 'Transporte de carga Líquida y granel.'},
-    {img: '../../../../assets/servicios/mula.png', title: 'Administración de Flota.'},
-    {img: '../../../../assets/servicios/mula.png', title: 'Alquiler de Tanques y Vehículos.'},
-    {img: '../../../../assets/servicios/mula.png', title: 'Transporte de gases Criogénicos y GLP.'},
-    {img: '../../../../assets/servicios/mula.png', title: 'Soluciones Logísticas.'},
+    {img: '../../../../assets/servicios/ct1.png', title: 'Transporte de carga Líquida y granel.'},
+    {img: '../../../../assets/servicios/doble.png', title: 'Administración de Flota.'},
+    {img: '../../../../assets/servicios/ct2.png', title: 'Alquiler de Tanques y Vehículos.'},
+    {img: '../../../../assets/servicios/ct1.png', title: 'Transporte de gases Criogénicos y GLP.'},
+    {img: '../../../../assets/servicios/doble.png', title: 'Soluciones Logísticas.'},
   ]
 
   ngAfterViewInit() {

@@ -1,6 +1,6 @@
 .faq-container {
     width: 100%;
-    padding-top: 150px;
+    padding: 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,11 +82,15 @@
 .question__body {
     padding: 0 25px;
     margin-top: 0px;
-    font-size: 16px;
     max-height: 0;
     overflow-y: hidden;
     margin-bottom: 20px;
     transition: all 0.8s ease;
+}
+
+.question__parag {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .-shown .question__header .header__item::before {
