@@ -6,6 +6,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { ServicComponent } from './components/servic/servic.component';
 import { AboutComponent } from './components/about/about.component';
 import { AmbientalComponent } from './components/ambiental/ambiental.component';
+import { PqrsComponent } from './components/pqrs/pqrs.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'servicios', component: ServicComponent},
   { path: 'sostenibilidad', component: AmbientalComponent},
+  { path: 'pqrs', component: PqrsComponent},
   { path: 'faq', component: FaqComponent},
 ];
 

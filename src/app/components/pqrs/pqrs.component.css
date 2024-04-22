@@ -1,0 +1,218 @@
+.container {
+  --color-primary: #EE2C37;
+  --font-color: rgb(29, 28, 28);
+  padding: 130px 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container__title {
+  margin: 25px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.container__cotizar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 25px auto;
+  gap: 5px;
+}
+
+/* Logos */
+.cotizar__logos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+}
+
+.logos__calculadora {
+  width: 95%;
+  margin: auto;
+}
+
+.logos__coordi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: 20px;
+}
+
+.coordi__texto {
+  font-weight: 500;
+}
+
+.coordi__i {
+  font-size: 30px;
+}
+
+
+
+/* Formulario */
+.cotizar__formulario {
+  width: 70%;
+  background-color: lightgray;
+}
+
+.formulario__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+
+.form__p {
+  font-size: 13px;
+}
+
+.seccion__label-title {
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.label-title__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.seccion__labels {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10%;
+}
+
+.labels__label {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.747);
+  font-size: 14px;
+}
+
+input, select, textarea {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(0, 0, 0, 0.425);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+/* Button */
+.form__submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit__btn {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #EE2C37;
+  color: #fff;
+  display: block;
+  width: auto;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 8px;
+  margin: 20px 0 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+  transition: all 0.3s;
+}
+
+.submit__btn:hover {
+cursor: pointer;
+scale: 1.05;
+background-color: #212529;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .container__cotizar {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 auto;
+      gap: 35px;
+  }
+
+  .cotizar__logos {
+      flex-direction: row;
+      gap: 25px;
+      width:100%;
+  }
+
+  hr {
+      display: none;
+  }
+
+  .logos__calculadora {
+      width: 25%;
+  }
+
+  .logos__coordi {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .coordi__i {
+      width: auto;
+  }
+
+  .cotizar__formulario {
+      width: 100%;
+  }
+
+  .container {
+      padding: 100px 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container__cotizar {
+      width: 100%;
+  }
+
+  .container {
+      padding: 100px 20px 0;
+  }
+
+  .coordi__i {
+      display: none;
+  }
+
+  .container__title {
+      margin: 10px;
+      font-size: 30px;
+      font-weight: 500;
+  }
+
+  .seccion__labels {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+  }
+
+  .labels__label {
+      width: 90%;
+      margin: auto;
+  }
+
+  .formulario__form {
+      gap: 15px;
+  }
+
+}

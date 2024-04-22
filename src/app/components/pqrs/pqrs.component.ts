@@ -3,11 +3,11 @@ import { FormulariosService } from 'src/app/services/formularios.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-cotizar',
-  templateUrl: './cotizar.component.html',
-  styleUrls: ['./cotizar.component.css']
+  selector: 'app-pqrs',
+  templateUrl: './pqrs.component.html',
+  styleUrls: ['./pqrs.component.css']
 })
-export class CotizarComponent implements OnInit {
+export class PqrsComponent implements OnInit {
 
   /* Para crear la solicitud */
   empresa!: string;

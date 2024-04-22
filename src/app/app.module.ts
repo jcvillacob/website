@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { InViewportModule } from 'ng-in-viewport';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { OdsComponent } from './components/ambiental/ods/ods.component';
 import { IndicadoresComponent } from './components/ambiental/indicadores/indicadores.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PqrsComponent } from './components/pqrs/pqrs.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +43,15 @@ import { FooterComponent } from './components/footer/footer.component';
     VideoinitComponent,
     OdsComponent,
     IndicadoresComponent,
-    FooterComponent
+    FooterComponent,
+    PqrsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    InViewportModule    
+    InViewportModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

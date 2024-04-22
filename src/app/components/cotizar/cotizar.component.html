@@ -18,7 +18,7 @@
 
         <!-- Formulario -->
         <div class="cotizar__formulario">
-            <form class="formulario__form" (ngSubmit)="sendForm()">
+            <form class="formulario__form" (ngSubmit)="createSolicitudes()">
                 <p class="form__p">Conoce de mi primera mano el costo de las rutas a nivel nacional.</p>
 
                 <!-- Datos de Empresa -->
@@ -29,11 +29,11 @@
                     <div class="seccion__labels">
                         <div class="labels__label">
                             <label for="nombre-empresa" class="label__title">Nombre de Empresa: </label>
-                            <input type="text" name="nombre-empresa" id="nombre-empresa" class="label__input">
+                            <input type="text" name="nombre-empresa" [(ngModel)]="empresa" id="nombre-empresa" class="label__input">
                         </div>
                         <div class="labels__label">
                             <label for="NIT" class="label__title">NIT: </label>
-                            <input type="text" name="NIT" id="NIT" class="label__input">
+                            <input type="text" name="NIT" [(ngModel)]="nit" id="NIT" class="label__input">
                         </div>
                     </div>
                 </div>
@@ -46,11 +46,11 @@
                     <div class="seccion__labels">
                         <div class="labels__label">
                             <label for="nombre" class="label__title">Nombre del Solicitante: </label>
-                            <input type="text" name="nombre" id="nombre" class="label__input">
+                            <input type="text" name="nombre" [(ngModel)]="nombre" id="nombre" class="label__input">
                         </div>
                         <div class="labels__label">
                             <label for="email" class="label__title">Correo Electrónico: </label>
-                            <input type="text" name="email" id="email" class="label__input">
+                            <input type="text" name="email" [(ngModel)]="email" id="email" class="label__input">
                         </div>
                     </div>
                 </div>
@@ -63,11 +63,11 @@
                    <div class="seccion__labels">
                         <div class="labels__label">
                             <label for="ciudadO" class="label__title">Ciudad: </label>
-                            <input type="text" name="ciudadO" id="ciudadO" class="label__input">
+                            <input type="text" name="ciudadO" [(ngModel)]="origen" id="ciudadO" class="label__input">
                         </div>
                         <div class="labels__label">
                             <label for="direccionO" class="label__title">Dirección: </label>
-                            <input type="text" name="direccionO" id="direccionO" class="label__input">
+                            <input type="text" name="direccionO" [(ngModel)]="direccionOrigen" id="direccionO" class="label__input">
                         </div>
                     </div>
                 </div>
@@ -79,11 +79,11 @@
                    <div class="seccion__labels">
                         <div class="labels__label">
                             <label for="ciudadD" class="label__title">Ciudad: </label>
-                            <input type="text" name="ciudadD" id="ciudadD" class="label__input">
+                            <input type="text" name="ciudadD" [(ngModel)]="destino" id="ciudadD" class="label__input">
                         </div>
                         <div class="labels__label">
                             <label for="direccionD" class="label__title">Dirección: </label>
-                            <input type="text" name="direccionD" id="direccionD" class="label__input">
+                            <input type="text" name="direccionD" [(ngModel)]="direccionDestino" id="direccionD" class="label__input">
                         </div>
                     </div>
                 </div>
@@ -126,11 +126,11 @@
                    <div class="seccion__labels">
                         <div class="labels__label">
                             <label for="producto">Producto: </label>
-                            <input type="text" name="producto" id="producto">
+                            <input type="text" name="producto" [(ngModel)]="producto" id="producto">
                         </div>
                         <div class="labels__label">
                             <label for="observaciones">Observaciones: </label>
-                            <textarea type="text" name="observaciones" id="observaciones"></textarea>
+                            <textarea type="text" name="observaciones" [(ngModel)]="observaciones" id="observaciones"></textarea>
                         </div>
                     </div>
                 </div>
