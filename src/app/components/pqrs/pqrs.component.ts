@@ -65,7 +65,7 @@ export class PqrsComponent implements OnInit {
     ) {
       Swal.fire(
         'Debes Ingresar Todos los datos',
-        `La Solicitud No ha sido enviada.`,
+        `La Solicitud de ${this.tipoPqrs} No ha sido enviada.`,
         'error'
       );
       return;
@@ -80,5 +80,25 @@ export class PqrsComponent implements OnInit {
       tipoPqrs: this.tipoPqrs,
       descripcion: this.descripcion,
     };
+    this.formulariosService.createPqrs(data).subscribe(data => {
+      Swal.fire({
+        title: `Solicitud de ${this.tipoPqrs} Enviada`,
+        html: `Ha sido creada con el radicado N° ${data.id}. Pronto nos contactaremos contigo.`,
+        icon: 'success',
+        customClass: {
+          popup: 'swal-wide',
+          title: 'swal-title',
+          htmlContainer: 'swal-text'
+        }
+      });
+      this.empresa = '';
+      this.nit = '';
+      this.nombre = '';
+      this.email = '';
+      this.cargo = '';
+      this.telefono = '';
+      this.tipoPqrs = 'Peticion';
+      this.descripcion = '';
+    })
   }
 }

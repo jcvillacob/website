@@ -16,4 +16,9 @@ export class FormulariosService {
     return this.http.post(`${this.apiUrl}/cotizaciones`, data);
   }
 
+  /* Solicitudes de PQRS */
+  createPqrs(data: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/pqrs`, data);
+  }
+
 }

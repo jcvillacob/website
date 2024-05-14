@@ -251,3 +251,16 @@ input[type="file"] {
   margin-left: 20px;
   margin-top: 20px;
 }
+
+/* sweetalert2 */
+.swal-wide {
+  width: 400px; /* Ajusta el ancho según sea necesario */
+}
+
+.swal-title {
+  text-align: center;
+}
+
+.swal-text {
+  text-align: center;
+}
