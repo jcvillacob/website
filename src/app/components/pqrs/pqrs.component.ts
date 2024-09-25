@@ -35,10 +35,10 @@ export class PqrsComponent implements OnInit {
 
   onFileSelected(event: any): void {
     this.archivoSeleccionado = event.target.files[0];
-    if (this.archivoSeleccionado && this.archivoSeleccionado.size > 5242880) {
+    if (this.archivoSeleccionado && this.archivoSeleccionado.size > 15728640) {
       Swal.fire(
         'Archivo demasiado grande',
-        'El archivo no debe exceder los 5 MB',
+        'El archivo no debe exceder los 15 MB',
         'error'
       );
       this.archivoSeleccionado = null;
@@ -49,6 +49,27 @@ export class PqrsComponent implements OnInit {
         this.archivoSeleccionado = null;
         (document.getElementById('fileUpload') as HTMLInputElement).value = '';
       }
+    }
+  }
+
+  getFileIcon(file: File): string {
+    const extension = file.name.split('.').pop()?.toLowerCase();
+    switch (extension) {
+      case 'pdf':
+        return 'fas fa-file-pdf';
+      case 'doc':
+      case 'docx':
+        return 'fas fa-file-word';
+      case 'xls':
+      case 'xlsx':
+        return 'fas fa-file-excel';
+      case 'png':
+      case 'jpg':
+      case 'jpeg':
+      case 'gif':
+        return 'fas fa-file-image';
+      default:
+        return 'fas fa-file';
     }
   }
 
