@@ -6,11 +6,7 @@
   <div class="container__cotizar">
     <!-- Logos -->
     <div class="cotizar__logos">
-      <img
-        src="../../../assets/logo22.png"
-        alt="Calculadora"
-        class="logos__calculadora"
-      />
+      <img src="../../../assets/logo22.png" alt="Calculadora" class="logos__calculadora" />
       <hr />
       <div class="logos__coordi">
         <!-- <i class="fa-solid fa-truck coordi__i"></i> -->
@@ -22,7 +18,7 @@
     <div class="cotizar__formulario">
       <form class="formulario__form" (ngSubmit)="createSolicitudes()">
         <p class="form__p">
-          Estamos atentos a cualquier solicitud que tengas para nosotros.
+          Estamos atentos a cualquier solicitud que tengas para nosotros. :)
         </p>
 
         <!-- Datos de Empresa -->
@@ -32,26 +28,13 @@
           </div>
           <div class="seccion__labels">
             <div class="labels__label">
-              <label for="nombre-empresa" class="label__title"
-                >Nombre de Empresa:
+              <label for="nombre-empresa" class="label__title">Nombre de Empresa:
               </label>
-              <input
-                type="text"
-                name="nombre-empresa"
-                [(ngModel)]="empresa"
-                id="nombre-empresa"
-                class="label__input"
-              />
+              <input type="text" name="nombre-empresa" [(ngModel)]="empresa" id="nombre-empresa" class="label__input" />
             </div>
             <div class="labels__label">
               <label for="NIT" class="label__title">NIT: </label>
-              <input
-                type="text"
-                name="NIT"
-                [(ngModel)]="nit"
-                id="NIT"
-                class="label__input"
-              />
+              <input type="text" name="NIT" [(ngModel)]="nit" id="NIT" class="label__input" />
             </div>
           </div>
         </div>
@@ -63,50 +46,24 @@
           </div>
           <div class="seccion__labels">
             <div class="labels__label">
-              <label for="nombre" class="label__title"
-                >Nombre del Solicitante:
+              <label for="nombre" class="label__title">Nombre del Solicitante:
               </label>
-              <input
-                type="text"
-                name="nombre"
-                [(ngModel)]="nombre"
-                id="nombre"
-                class="label__input"
-              />
+              <input type="text" name="nombre" [(ngModel)]="nombre" id="nombre" class="label__input" />
             </div>
             <div class="labels__label">
-              <label for="email" class="label__title"
-                >Correo Electrónico:
+              <label for="email" class="label__title">Correo Electrónico:
               </label>
-              <input
-                type="text"
-                name="email"
-                [(ngModel)]="email"
-                id="email"
-                class="label__input"
-              />
+              <input type="text" name="email" [(ngModel)]="email" id="email" class="label__input" />
             </div>
           </div>
           <div class="seccion__labels">
             <div class="labels__label">
               <label for="cargo" class="label__title">Cargo: </label>
-              <input
-                type="text"
-                name="cargo"
-                [(ngModel)]="cargo"
-                id="cargo"
-                class="label__input"
-              />
+              <input type="text" name="cargo" [(ngModel)]="cargo" id="cargo" class="label__input" />
             </div>
             <div class="labels__label">
               <label for="telefono" class="label__title">Teléfono: </label>
-              <input
-                type="number"
-                name="telefono"
-                [(ngModel)]="telefono"
-                id="telefono"
-                class="label__input"
-              />
+              <input type="number" name="telefono" [(ngModel)]="telefono" id="telefono" class="label__input" />
             </div>
           </div>
         </div>
@@ -138,14 +95,10 @@
           </div>
           <div class="seccion__labels">
             <div class="labels__label" [style.width]="'100%'">
-              <label for="descripcion">Descripción detallada de la solicitud en modo, tiempo y lugar en el que ocurrieron los hechos. </label>
-              <textarea
-                type="text"
-                name="descripcion"
-                [(ngModel)]="descripcion"
-                id="descripcion"
-                [style.height]="'150px'"
-              ></textarea>
+              <label for="descripcion">Descripción detallada de la solicitud en modo, tiempo y lugar en el que
+                ocurrieron los hechos. </label>
+              <textarea type="text" name="descripcion" [(ngModel)]="descripcion" id="descripcion"
+                [style.height]="'150px'"></textarea>
             </div>
           </div>
         </div>
@@ -156,20 +109,13 @@
             <h3 class="label-title__title">Subir Archivos</h3>
           </div>
           <div class="seccion__labels" [style.width]="'100%'">
-            <input
-              type="file"
-              id="fileUpload"
-              (change)="onFileSelected($event)"
-              class="label__input-file"
-            />
+            <input type="file" id="fileUpload" (change)="onFileSelected($event)" class="label__input-file" />
           </div>
           <div *ngIf="uploadedFiles.length > 0">
             <ul class="file__list">
               <li *ngFor="let file of uploadedFiles" class="list__element">
-                {{ file.name }} ({{
-                  file.size / 1024 / 1024 | number : "1.0-2"
-                }}
-                MB)
+                <i [ngClass]="getFileIcon(file)"></i>
+                {{ file.name }} ({{ file.size / 1024 / 1024 | number: "1.0-2" }} MB)
               </li>
             </ul>
           </div>
