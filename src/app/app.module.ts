@@ -24,6 +24,8 @@ import { OdsComponent } from './components/ambiental/ods/ods.component';
 import { IndicadoresComponent } from './components/ambiental/indicadores/indicadores.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PqrsComponent } from './components/pqrs/pqrs.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { BlogComponent } from './components/blogs/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { PqrsComponent } from './components/pqrs/pqrs.component';
     OdsComponent,
     IndicadoresComponent,
     FooterComponent,
-    PqrsComponent
+    PqrsComponent,
+    BlogsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,45 @@
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Bienvenido al Blog</h1>
+</div>
+
+<!-- Category Navigation -->
+<!-- <nav class="category-nav">
+  <button
+    *ngFor="let category of categories"
+    (click)="filterBlogs(category)"
+    [class.active]="selectedCategory === category"
+  >
+    {{ category | titlecase }}
+  </button>
+</nav> -->
+
+<!-- Blog Cards -->
+<div class="blog-grid">
+  <div class="blog-card" *ngFor="let blog of displayedBlogs">
+    <!-- Imagen con enlace al blog -->
+    <a [routerLink]="['/blog', blog.BlogID]" class="image-link">
+      <img [src]="blog.UrlImg" alt="{{ blog.Titulo }}" />
+    </a>
+    <div class="blog-content">
+      <!-- Título con enlace al blog -->
+      <h3>
+        <a [routerLink]="['/blog', blog.BlogID]" [title]="blog.Titulo">{{ blog.Titulo }}</a>
+      </h3>
+      <!-- Resumen -->
+      <p>{{ blog.Resumen | slice: 0:100 }}...</p>
+      <!-- Autor -->
+      <div class="author-info">
+        <img [src]="blog.UrlImg" alt="{{ blog.Autor }}" />
+        <span>{{ blog.Autor }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Botón Ver Más -->
+<div class="load-more" *ngIf="showLoadMore">
+  <button (click)="loadMoreBlogs()">Ver más...</button>
+</div>
+
+<app-footer></app-footer>

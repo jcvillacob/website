@@ -7,6 +7,8 @@ import { ServicComponent } from './components/servic/servic.component';
 import { AboutComponent } from './components/about/about.component';
 import { AmbientalComponent } from './components/ambiental/ambiental.component';
 import { PqrsComponent } from './components/pqrs/pqrs.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { BlogComponent } from './components/blogs/blog/blog.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'sostenibilidad', component: AmbientalComponent},
   { path: 'pqrs', component: PqrsComponent},
   { path: 'faq', component: FaqComponent},
+  { path: 'blog', component: BlogsComponent},
+  { path: 'blog/:id', component: BlogComponent},
 ];
 
 @NgModule({

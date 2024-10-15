@@ -1,0 +1,56 @@
+<div class="blog-container" *ngIf="blog">
+  <!-- Botón para volver a blogs -->
+  <button (click)="goBack()" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"
+      stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+    </svg>
+  </button>
+
+  <div class="content-wrapper">
+    <!-- Artículo Principal -->
+    <article class="blog-article">
+      <header class="blog-header">
+        <!-- Encabezado -->
+        <address class="author-info">
+          <div class="author-details">
+            <img class="author-image" [src]="blog.UrlImg" alt="Foto de perfil" />
+            <div>
+              <p class="author-name">{{ blog.Autor }}</p>
+              <p class="author-occupation">{{ blog.Ocupacion }}</p>
+              <p class="publish-date">
+                <time [attr.datetime]="blog.FechaCreacion">
+                  {{ blog.FechaCreacion | date }}
+                </time>
+              </p>
+            </div>
+          </div>
+        </address>
+      </header>
+
+      <!-- Información del Creador -->
+      <div class="creator-info">
+        <p>
+          Publicado por <strong>{{ blog.Creador }}</strong>
+        </p>
+      </div>
+
+      <!-- Contenido del Blog -->
+      <div class="ck-content" [innerHTML]="blog.Blog"></div>
+    </article>
+
+    <!-- Sección de Blogs Recomendados -->
+    <aside class="recommended-blogs">
+      <h3>Blogs Recomendados</h3>
+      <div class="recommended-list">
+        <div class="recommended-card" *ngFor="let recommendedBlog of recommendedBlogs">
+          <img [src]="recommendedBlog.UrlImg" alt="{{ recommendedBlog.Titulo }}" />
+          <h4>{{ recommendedBlog.Titulo }}</h4>
+          <a [routerLink]="['/blog', recommendedBlog.BlogID]" class="read-more">Leer más</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<app-footer></app-footer>
