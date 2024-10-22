@@ -11,8 +11,16 @@
   font-size: 2.5em;
 }
 
+/* New Blogs Title */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2em;
+  color: var(--font-color);
+}
+
 /* Category Navigation */
-.category-nav {
+/* .category-nav {
   display: flex;
   justify-content: flex-start;
   padding: 0 20px;
@@ -34,7 +42,7 @@
 .category-nav button.active {
   background-color: var(--color-primary);
   color: white;
-}
+} */
 
 /* Blog Grid */
 .blog-grid {

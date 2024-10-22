@@ -26,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PqrsComponent } from './components/pqrs/pqrs.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { BlogComponent } from './components/blogs/blog/blog.component';
+import { NoticiasComponent } from './components/blogs/noticias/noticias.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { BlogComponent } from './components/blogs/blog/blog.component';
     FooterComponent,
     PqrsComponent,
     BlogsComponent,
-    BlogComponent
+    BlogComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

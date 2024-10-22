@@ -9,6 +9,8 @@ import { environment } from 'src/environments/environmet';
 export class BlogsService {
 
   private apiUrl = `${environment.apiURL}/blogs`;
+  private apiUrlNews = `${environment.apiURL}/noticias`;
+
 
   constructor(private http: HttpClient) { }
 
@@ -18,5 +20,9 @@ export class BlogsService {
 
   getBlog(blogId: number): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${blogId}`);
+  }
+
+  getNews(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrlNews);
   }
 }
