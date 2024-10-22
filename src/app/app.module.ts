@@ -57,7 +57,7 @@ import { NoticiasComponent } from './components/blogs/noticias/noticias.componen
     AppRoutingModule,
     FormsModule,
     InViewportModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

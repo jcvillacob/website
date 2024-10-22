@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { environment } from 'src/environments/environmet';
 
 @Injectable({
@@ -23,6 +23,8 @@ export class BlogsService {
   }
 
   getNews(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrlNews);
+    return this.http.get<any[]>(this.apiUrlNews).pipe(
+      map(news => news.slice(-3).reverse())
+    );
   }
 }

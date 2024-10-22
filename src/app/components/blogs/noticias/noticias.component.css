@@ -1,0 +1,155 @@
+/* Swiper container */
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+
+/* Contenedor con padding */
+.slide-wrapper {
+  padding: 15px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Fondo y contenido del slide */
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradiente de superposición */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.158) 50%,
+    rgba(0, 0, 0, 0.938) 100%
+  );
+}
+
+/* Contenido de texto */
+.text-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+.text-content h2 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.text-content p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mejora de flechas de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+/* Ajustar el tamaño de los iconos de las flechas */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+/* Mejora de la paginación */
+.swiper-pagination {
+  bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+/* Opcional: aumentar el tamaño de los puntos de paginación */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .swiper {
+    height: 400px; /* Altura reducida en pantallas pequeñas */
+  }
+
+  .slide-wrapper {
+    padding: 8px;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 16px;
+  }
+  
+  .text-content {
+    bottom: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    margin-bottom: 15px;
+  }
+
+  .text-content h2 {
+    font-size: 1.8em;
+  }
+
+  .text-content p {
+    width: 100%;
+    font-size: 1em;
+  }
+}
