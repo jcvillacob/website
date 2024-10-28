@@ -1,20 +1,4 @@
-<!-- Hero Section -->
-<!-- <div class="hero">
-  <h1>Bienvenido al Blog</h1>
-</div> -->
-
 <app-noticias></app-noticias>
-
-<!-- Category Navigation -->
-<!-- <nav class="category-nav">
-  <button
-    *ngFor="let category of categories"
-    (click)="filterBlogs(category)"
-    [class.active]="selectedCategory === category"
-  >
-    {{ category | titlecase }}
-  </button>
-</nav> -->
 
 <!-- New Blogs Title -->
 <h2 class="section-title">Nuevos Blogs</h2>
@@ -35,7 +19,7 @@
       <p>{{ blog.Resumen | slice: 0:100 }}...</p>
       <!-- Autor -->
       <div class="author-info">
-        <img [src]="blog.UrlImg" alt="{{ blog.Autor }}" />
+        <img [src]="blog.UrlImgAutor" alt="{{ blog.Autor }}" />
         <span>{{ blog.Autor }}</span>
       </div>
     </div>

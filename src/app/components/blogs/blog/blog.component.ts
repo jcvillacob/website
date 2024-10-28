@@ -51,9 +51,9 @@ export class BlogComponent implements OnInit {
   private loadRecommendedBlogs(currentBlogId: number): void {
     this.blogsService.getBlogs().subscribe((data) => {
       // Filtrar blogs excluyendo el actual y limitar a 3 recomendaciones
-      this.recommendedBlogs = data
+      this.recommendedBlogs = data.reverse()
         .filter((blog) => blog.BlogID !== currentBlogId)
-        .slice(0, 3);
+        .slice(0, 4);
     });
   }
 

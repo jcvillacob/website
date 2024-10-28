@@ -19,31 +19,6 @@
   color: var(--font-color);
 }
 
-/* Category Navigation */
-/* .category-nav {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 20px;
-  margin: 20px 0;
-  gap: 10px;
-}
-
-.category-nav button {
-  cursor: pointer;
-  padding: 10px 15px;
-  border: none;
-  background-color: transparent;
-  color: var(--font-color);
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.category-nav button:hover,
-.category-nav button.active {
-  background-color: var(--color-primary);
-  color: white;
-} */
-
 /* Blog Grid */
 .blog-grid {
   display: grid;

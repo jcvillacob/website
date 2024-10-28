@@ -14,7 +14,7 @@
         <!-- Encabezado -->
         <address class="author-info">
           <div class="author-details">
-            <img class="author-image" [src]="blog.UrlImg" alt="Foto de perfil" />
+            <img class="author-image" [src]="blog.UrlImgAutor" alt="Foto de perfil" />
             <div>
               <p class="author-name">{{ blog.Autor }}</p>
               <p class="author-occupation">{{ blog.Ocupacion }}</p>
@@ -44,7 +44,7 @@
       <h3>Blogs Recomendados</h3>
       <div class="recommended-list">
         <div class="recommended-card" *ngFor="let recommendedBlog of recommendedBlogs">
-          <img [src]="recommendedBlog.UrlImg" alt="{{ recommendedBlog.Titulo }}" />
+          <img [src]="recommendedBlog.UrlImg" [routerLink]="['/blog', recommendedBlog.BlogID]" alt="{{ recommendedBlog.Titulo }}" />
           <h4>{{ recommendedBlog.Titulo }}</h4>
           <a [routerLink]="['/blog', recommendedBlog.BlogID]" class="read-more">Leer más</a>
         </div>
