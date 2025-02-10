@@ -27,6 +27,7 @@ import { PqrsComponent } from './components/pqrs/pqrs.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { BlogComponent } from './components/blogs/blog/blog.component';
 import { NoticiasComponent } from './components/blogs/noticias/noticias.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { NoticiasComponent } from './components/blogs/noticias/noticias.componen
     PqrsComponent,
     BlogsComponent,
     BlogComponent,
-    NoticiasComponent
+    NoticiasComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

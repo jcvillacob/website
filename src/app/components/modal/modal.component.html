@@ -1,0 +1,11 @@
+<div class="modal-backdrop" (click)="closeModal()">
+  <div class="modal-container" (click)="$event.stopPropagation()">
+    <!-- Botón para cerrar el modal -->
+    <button class="close-btn" (click)="closeModal()">
+      <i class="fa-solid fa-x"></i>
+    </button>
+
+    <!-- Imagen dentro del modal -->
+    <img src="assets/img_whatsapp.png" alt="Imagen de Whatsapp" (click)="openWhatsApp()"/>
+  </div>
+</div>

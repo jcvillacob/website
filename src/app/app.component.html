@@ -1,4 +1,10 @@
 <app-navbar></app-navbar>
 <div class="container" [ngClass]="{'-activated': activeNav}" (click)="setNav()">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+
+  <!-- Puedes colocar un botón para abrir el modal -->
+  <button (click)="openModal()">Abrir Modal</button>
 </div>
+
+<!-- Incluye el modal de forma condicional -->
+<app-modal *ngIf="showModal" (close)="closeModal()"></app-modal>
