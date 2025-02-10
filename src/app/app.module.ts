@@ -24,6 +24,10 @@ import { OdsComponent } from './components/ambiental/ods/ods.component';
 import { IndicadoresComponent } from './components/ambiental/indicadores/indicadores.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PqrsComponent } from './components/pqrs/pqrs.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { BlogComponent } from './components/blogs/blog/blog.component';
+import { NoticiasComponent } from './components/blogs/noticias/noticias.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -44,14 +48,18 @@ import { PqrsComponent } from './components/pqrs/pqrs.component';
     OdsComponent,
     IndicadoresComponent,
     FooterComponent,
-    PqrsComponent
+    PqrsComponent,
+    BlogsComponent,
+    BlogComponent,
+    NoticiasComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     InViewportModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
